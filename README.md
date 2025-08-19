@@ -49,7 +49,7 @@ python HuBERT_CPT.py
 学習が開始され、進捗が`wandb`で確認できます。完了後、学習済みモデルが`output_dir`（デフォルトでは`./hubert-base-japanese-continued-pretraining`）に保存されます。
 
 ---
-## 📜 各スクリプトの役割
+## 各スクリプトの役割
 
 - **`HuBERT_CPT.py`**:
     データの前処理、カスタムモデルの定義、`Trainer`を使った学習の実行までを行います。
