@@ -161,7 +161,7 @@ config.num_clusters = 100
 
 model = CustomHuBERTForPreTraining.from_pretrained(model_name, config=config)
 
-dataset = load_dataset("csv", data_files={"train": "/home/kumagai/project/code/HuBERT_Finetuning/venv/project/metadata.csv"})
+dataset = load_dataset("csv", data_files={"train": "./metadata.csv"})
 
 def preprocess_function(examples):
 
@@ -184,7 +184,7 @@ def preprocess_function(examples):
         audio_arrays.append(speech_array)
         label_arrays.append(label_array)
 
-    # 音声をモデル入力形式に変換（ここで切り詰め＆パディングが行われる）
+    # 音声をモデル入力形式に変換（切り詰め＆パディング）
     inputs = feature_extractor(
         audio_arrays,
         sampling_rate=feature_extractor.sampling_rate,
