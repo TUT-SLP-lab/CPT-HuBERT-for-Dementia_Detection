@@ -1,5 +1,5 @@
 # CPT-HuBERT-for-Dementia_Detection
-This is the code for continuing HuBERT's Continual Pre-Training.
+This is the code for HuBERT's Continual Pre-Training.
 
 Hugging Face `transformers`ライブラリをベースとし、HuBERTの論文で提案されているk-meansによる擬似ラベル生成とマスク化予測の2段階プロセスを再現しています。
 
